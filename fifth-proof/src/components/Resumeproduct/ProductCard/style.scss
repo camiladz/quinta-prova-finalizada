@@ -1,0 +1,17 @@
+.productCard {
+    width: 780px;
+    height: 366px;
+
+
+    background: #FFFFFF;
+    border-radius: 8px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__product {
+        display: flex;
+    }
+}

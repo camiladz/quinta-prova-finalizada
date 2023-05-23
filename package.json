@@ -1,0 +1,29 @@
+{
+  "name": "trainees",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.14",
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/node": "^18.11.9",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.3"
+  },
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only --inspect --watch **/*.gql src/app.ts",
+    "build": "tsc -p .",
+    "copy-schemas": "npx cpx src/services/authentication/graphql/*.gql dist/services/authentication/graphql && npx cpx src/services/users/graphql/*.gql dist/services/users/graphql && npx cpx src/services/organization/graphql/*.gql dist/services/organization/graphql && npx cpx src/services/services/graphql/*.gql dist/services/services/graphql && npx cpx src/services/vtex/graphql/*.gql dist/services/vtex/graphql && npx cpx src/services/shortener-url/graphql/*.gql dist/services/shortener-url/graphql && npx cpx src/services/affiliate/graphql/*.gql dist/services/affiliate/graphql && npx cpx src/services/organization-permissions/graphql/*.gql dist/services/organization-permissions/graphql && npx cpx src/services/service-permissions/graphql/*.gql dist/services/service-permissions/graphql && npx cpx src/services/menu/graphql/*.gql dist/services/menu/graphql && npx cpx src/services/bank-data/graphql/*.gql dist/services/bank-data/graphql && npx cpx src/services/payments/graphql/*.gql dist/services/payments/graphql && npx cpx src/services/integration/graphql/*.gql dist/services/integration/graphql && npx cpx src/services/affiliate-store/graphql/*.gql dist/services/affiliate-store/graphql && npx cpx src/services/inside-sales/graphql/*.gql dist/services/inside-sales/graphql && npx cpx src/services/personalized-commissions/graphql/*.gql dist/services/personalized-commissions/graphql && npx cpx src/services/terms-and-conditions/graphql/*.gql dist/services/terms-and-conditions/graphql && npx cpx src/services/inside-sales/graphql/*.gql dist/services/inside-sales/graphql && npx cpx src/services/commission-bonification/graphql/*.gql dist/services/commission-bonification/graphql && npx cpx src/services/saas-integration/graphql/*.gql dist/services/saas-integration/graphql && npx cpx src/services/finantial-conciliation/graphql/*.gql dist/services/finantial-conciliation/graphql && npx cpx src/services/users-organizations/graphql/*.gql dist/services/users-organizations/graphql && npx cpx src/services/organization-rules/graphql/*.gql dist/services/organization-rules/graphql && npx cpx src/services/abandoned-cart/graphql/*.gql dist/services/abandoned-cart/graphql && npx cpx src/services/white-label/graphql/*.gql dist/services/white-label/graphql && npx cpx src/services/app-store/graphql/*.gql dist/services/app-store/graphql && npx cpx src/services/apps/graphql/*.gql dist/services/apps/graphql && npx cpx src/services/webhook/graphql/*.gql dist/services/webhook/graphql",
+    "start": "ls && node dist/app.js"
+  },
+  "dependencies": {
+    "@graphql-tools/schema": "^9.0.10",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.6.0",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
