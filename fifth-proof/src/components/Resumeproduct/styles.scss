@@ -1,0 +1,56 @@
+.resumeProduct {
+    background: #F1F2F9;
+
+    font-family: 'Inter';
+
+    &__header {
+        padding: 0 148px;
+
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    &__titleAndButton {
+        display: flex;
+
+        max-width: 1130px;
+        height: 96px;
+
+        margin: 0 auto;
+
+        align-items: center;
+        justify-content: space-between;
+
+        .resume__title {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+
+            color: #101010;
+        }
+
+        .resume__button {
+            width: 217px;
+            height: 48px;
+
+            border: 1.5px solid #2E44A1;
+            border-radius: 5px;
+
+            background: transparent;
+
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+
+            color: #2E44A1;
+
+            cursor: pointer;
+        }
+    }
+
+    .productCardAndPrice {
+        display: flex;
+        justify-content: center;
+
+        column-gap: 16px;
+    }
+}

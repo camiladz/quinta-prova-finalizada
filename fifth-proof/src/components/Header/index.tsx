@@ -1,4 +1,5 @@
 import './styles.scss'
+import userImage from '../../assets/Avatar.svg'
 
 export const Header = () => {
 
@@ -27,7 +28,7 @@ export const Header = () => {
                 </svg>
 
                 <div className="user__profile">
-                    <img src='{userImage}' alt="user image profile" className="user__image" />
+                    <img src={userImage} alt="user image profile" className="user__image" />
                     <span className="user__name">
                         Gustavo Silva
                     </span>

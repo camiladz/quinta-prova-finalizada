@@ -1,17 +1,198 @@
 .productCard {
-    width: 780px;
-    height: 366px;
+    font-family: 'Inter';
 
+    border-top: 4px solid #425DC7;
+
+    width: 732px;
+    height: 366px;
 
     background: #FFFFFF;
     border-radius: 8px;
 
+    margin: 32px auto;
+    padding: 16px 24px;
+
+    &__info {
+        display: flex;
+
+        align-items: center;
+    }
+
+
     &__header {
         display: flex;
         justify-content: space-between;
+
+        width: 688px;
+    }
+
+    &__productTitle {
+        width: 448px;
+        height: 16px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+
+        color: #555555;
+    }
+
+    &__quantity {
+        justify-content: start;
+    }
+
+    &__price {
+        justify-content: center;
+    }
+
+    &__price,
+    &__quantity {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+
+        text-align: center;
+
+        display: flex;
+
+        color: #555555;
+
+        width: 96px;
     }
 
     &__product {
         display: flex;
+
+        padding: 24px;
+
+        align-items: center;
+
+        column-gap: 16px;
+
+
+        .product__name {
+            width: 392px;
+            height: 20px;
+
+            margin-left: 16px;
+        }
+
+        .product__image {
+            width: 40px;
+            height: 40px;
+
+            border-radius: 4px;
+        }
+
+        .product__prices {
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            .product__listPrice {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 16px;
+
+                color: rgba(0, 0, 0, 0.6);
+            }
+
+            .product__price {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+
+                display: flex;
+                align-items: center;
+                text-align: center;
+
+                color: #101010;
+            }
+
+            .product__discount {
+                width: 48px;
+                height: 20px;
+
+                background: #EB0045;
+                border-radius: 500px;
+
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 16px;
+
+                align-items: center;
+                justify-content: center;
+
+                color: #FFFFFF;
+
+                display: flex;
+
+                margin-top: 8px;
+            }
+        }
+    }
+
+    .remove__product {
+        background: none;
+
+        border: none;
+
+        width: 20px;
+        height: 20px;
+    }
+
+    .extendedWarranty {
+        width: 224px;
+        height: 36px;
+
+        border: 1.5px solid #2E44A1;
+        border-radius: 5px;
+
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+
+        background: none;
+
+        .extendedWarranty__text {
+            border: none;
+
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 16px;
+
+            color: #2E44A1;
+        }
+
+        &:hover {
+            background: #2E44A1;
+
+            .extendedWarranty__text {
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    .resumeProduct__total {
+        height: 58px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+
+
+    }
+
+    .resumeProduct__total--price {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: #101010;
     }
 }
